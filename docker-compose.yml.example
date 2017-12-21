@@ -42,6 +42,8 @@ services:
     environment:
       PIPELINE_WORKERS: 3
       ELASTICSEARCH_URL: http://elasticsearch:9200
+      XPACK_MONITORING_ENABLED: "false"
+
     networks:
       - darion_logging
 networks:
