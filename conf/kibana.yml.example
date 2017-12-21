@@ -1,0 +1,12 @@
+# https://github.com/elastic/kibana/blob/master/config/kibana.yml
+# https://www.elastic.co/guide/en/kibana/current/_configuring_kibana_on_docker.html
+server.name: kibana
+server.host: "0.0.0.0"
+server.port: 5601
+
+xpack.security.encryptionKey: "something_at_least_32_characters"
+elasticsearch.password: "11111111"
+
+# elasticsearch.url http://elasticsearch:9200
+elasticsearch.username: "elastic"
+elasticsearch.password: "kibanapassword"

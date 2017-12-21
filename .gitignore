@@ -1,0 +1,11 @@
+.DS_Store
+.vagrant
+*.swp
+
+docker-compose.yml
+
+conf/kibana.yml
+conf/logstash.yml
+
+logstash/config
+logstash/pipeline
