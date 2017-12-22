@@ -5,6 +5,9 @@ services:
     container_name: elasticsearch
     environment:
       - cluster.name=docker-cluster
+      - "http.cors.enabled=true"
+      - "http.cors.allow-origin=*"
+      - "http.cors.allow-methods='OPTIONS, HEAD, GET, POST, PUT, DELETE'"
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms1024m -Xmx1024m"
     ulimits:
