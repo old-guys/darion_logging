@@ -50,8 +50,11 @@ services:
     image: bobrik/curator:5.4.0
     container_name: curator
     volumes:
-      - ./curator/curator.yml:/root/.curator/curator.yml
-    entrypoint: /usr/bin/curator /root/.curator/curator.yml
+      - ./curator/config.yml:/curator/config.yml
+      - ./curator/actions.yml:/curator/actions.yml
+      - ./curator/entrypoint.sh:/curator/entrypoint.sh
+    entrypoint: sh /curator/entrypoint.sh
+    # entrypoint: ls /var/tmp/
     networks:
       - darion_logging
 networks:
