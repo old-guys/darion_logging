@@ -46,6 +46,14 @@ services:
 
     networks:
       - darion_logging
+  curator:
+    image: bobrik/curator:5.4.0
+    container_name: curator
+    volumes:
+      - ./curator/curator.yml:/root/.curator/curator.yml
+    entrypoint: /usr/bin/curator /root/.curator/curator.yml
+    networks:
+      - darion_logging
 networks:
   darion_logging:
 volumes:

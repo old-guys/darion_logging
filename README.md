@@ -7,6 +7,7 @@
 - [logstash](https://www.elastic.co/downloads/logstash)
 - [docker](https://docs.docker.com/engine/installation/linux/docker-ce/centos/#install-from-a-package)
 - [logstash conf](https://github.com/dwbutler/logstash-logger/tree/master/samples)
+- [curator](https://www.elastic.co/guide/en/elasticsearch/client/curator/5.x/about-features.html)
 
 ### setup docker
 
@@ -55,7 +56,9 @@ curl -H 'Content-Type: application/x-ndjson' -XPOST 'localhost:9200/shakespeare/
 
 ## security
 
+- https://www.elastic.co/guide/en/x-pack/current/xpack-security.html
 - https://www.elastic.co/guide/en/kibana/6.1/using-kibana-with-security.html
+- https://www.elastic.co/subscriptions
 
 设置 kibana 密码
 

@@ -9,3 +9,6 @@ conf/logstash.yml
 
 logstash/config
 logstash/pipeline
+
+curator/config.yml
+curator/actions.yml
